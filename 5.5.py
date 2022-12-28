@@ -21,7 +21,7 @@ for i in range (0, 1000):
 
 for i in range(2, int(len(num_list))):
     for j in range(i*i, int(len(num_list)), i):
-        if j%i==0:
+        if num_list[j]==1 and j % i == 0:
             num_list[j] = 0
 
 for i in range(0, len(num_list)):
