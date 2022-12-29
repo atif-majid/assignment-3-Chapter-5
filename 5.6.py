@@ -16,9 +16,7 @@ def bubbleSort(item_list):
     for i in range(0, len(item_list)):
         for j in range(i, len(item_list)):
             if item_list[i]>item_list[j]:
-                temp = item_list[j];
-                item_list[j] = item_list[i]
-                item_list[i] = temp
+                item_list[i], item_list[j] = item_list[j], item_list[i]
     return item_list
 
 my_list = [12, 43, 13, 5, 67, 94, 32]
